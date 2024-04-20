@@ -79,7 +79,8 @@ CREATE TABLE Pantry_Ingredients(
 
 DROP TABLE IF EXISTS Reports CASCADE;
 CREATE TABLE Reports(
-    chefname VARCHAR(255) PRIMARY KEY,
+    report_id SERIAL PRIMARY KEY,
+    chefname VARCHAR(255),
     report TEXT NOT NULL,
     FOREIGN KEY (chefname) REFERENCES Users(username)
 );
