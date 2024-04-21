@@ -81,6 +81,7 @@ DROP TABLE IF EXISTS Reports CASCADE;
 CREATE TABLE Reports(
     report_id SERIAL PRIMARY KEY,
     chefname VARCHAR(255),
+    title VARCHAR(50),
     report TEXT NOT NULL,
     FOREIGN KEY (chefname) REFERENCES Users(username)
 );
