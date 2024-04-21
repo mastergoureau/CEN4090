@@ -5,6 +5,7 @@ from config import config
 
 def connect():
     connection = None
+    cur = None
     try:
         params = config()
         print('Connecting to the database...')
@@ -53,4 +54,3 @@ def connect():
 
 if __name__ == "__main__":
     connect()
-    print("Everything worked")
