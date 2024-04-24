@@ -38,7 +38,7 @@ const RegisterPage = () => {
     if (response.ok) {
       const data = await response.json();
       // Ensure your app's base URL is correctly prepended if necessary
-      window.location.href = `/user`;
+      window.location.href = '/user';
     } else {
       console.error('Registration failed');
     }
@@ -116,7 +116,7 @@ const RegisterPage = () => {
           <button type="submit" className="bg-secondary hover:bg-muted text-white hover:text-secondary rounded-lg py-2">
             Create Account
           </button>
-          <h4 className="pt-4 text-muted text-center">If you already have an account <Link href="/login" className="hover:text-secondary">click here to register</Link></h4>
+          <h4 className="pt-4 text-muted text-center">If you already have an account <Link href="/login" className="hover:text-secondary">click here to login</Link></h4>
         </form>
       </div>
       <Image src="/registration.jpg" alt="Registration" width={500} height={400} className="w-1/2 h-full lg:block hidden"/>
